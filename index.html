@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Заголовок</h1>
+
+        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis earum fuga recusandae unde, mollitia obcaecati ab excepturi tenetur, cum quam, voluptates corporis deserunt laborum atque quisquam. Accusamus, sit sint.</p>
+
+        <img class="img" src="img/like.png" alt="">
+    </div>
+
+    <script>
+        const myImage = document.querySelector('.img');
+        const header = document.querySelector('h1');
+        console.log(myImage);
+
+        myImage.addEventListener('click', function() {
+            myImage.src = "img/img.jpg";
+            header.classList.add('blue');
+        });
+    </script>
+
+</body>
+
+</html>
