@@ -9,22 +9,77 @@
 </head>
 
 <body>
+
+
     <div class="container">
-        <h1>Заголовок</h1>
+        <ul class="ul">
+            <li id="li1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo expedita sunt odit optio assumenda magnam, iusto sit provident! Tenetur sint eveniet fugit ea quam quos laboriosam at velit sequi.</li>
+            <li>Obcaecati, recusandae? Commodi iusto sint veritatis debitis natus nesciunt laudantium alias temporibus! Optio tempore sed nobis repudiandae non voluptate cum eos ipsa numquam placeat voluptatum, soluta mollitia impedit natus debitis!</li>
+            <li>Quisquam animi, tempora nobis est aliquid eaque rerum modi reprehenderit ipsum similique facere aspernatur voluptatum totam consequuntur consequatur soluta voluptates rem molestias illo autem esse. Debitis recusandae id quod assumenda!</li>
+            <li>Optio molestiae cupiditate magni ipsum quo fugit amet reprehenderit. Adipisci assumenda voluptas ducimus neque quod porro explicabo nostrum ut, odio tempore facere corporis eius sint eveniet corrupti delectus, veniam aliquam.</li>
+        </ul>
+
+        <h1 class="main-title ">ОФИГЕТЬ!</h1>
+        <h2 class="sub-title">В Краснодаре зимой пошёл снег!</h2>
 
         <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint perspiciatis earum fuga recusandae unde, mollitia obcaecati ab excepturi tenetur, cum quam, voluptates corporis deserunt laborum atque quisquam. Accusamus, sit sint.</p>
 
         <img class="img" src="img/like.png" alt="">
+
+        <button class="btn">Я кнопка</button>
     </div>
 
     <script>
-        const myImage = document.querySelector('.img');
-        const header = document.querySelector('h1');
-        console.log(myImage);
+        console.log(document.querySelector(".ul").lastElementChild);
+        document.querySelector(".ul").firstElementChild.innerHTML = "Привет";
+        document.querySelector(".ul").lastElementChild.innerHTML = "Пока";
 
-        myImage.addEventListener('click', function() {
-            myImage.src = "img/img.jpg";
-            header.classList.add('blue');
+        document.addEventListener('DOMContentLoaded', async function() {
+
+            const button = document.querySelector('.btn');
+            const mainTitle = document.querySelector('.main-title');
+            const image = document.querySelector('.img');
+
+            // button.addEventListener('eventName', function(){
+            // });
+
+            //Синхронные
+            //Асинхронные Asyns
+
+            // Получить адрес картинки
+            // Скачать картинку
+            // Заменить картинку на сайте
+
+            let request = await fetch("https://randomfox.ca/floof/");
+            let json = await request.json();
+            let imageURL = json.image;
+
+            tempImage = new Image();
+            tempImage.src = imageURL;
+
+            image.addEventListener('click', async function() {
+                image.src = tempImage.src;
+                //mainTitle.classList.add('main-title-second-color');
+                //image.src = "img/img.jpg";
+                //mainTitle.innerHTML = "ОФИГЕТЬ! Я ПОЗЕЛЕНЕЛ! УЖС";
+
+                request = await fetch("https://randomfox.ca/floof/");
+                json = await request.json();
+                imageURL = json.image;
+
+                tempImage.src = imageURL;
+            });
+
+
+
+            // const myImage = document.querySelector('.img');
+            // const header = document.querySelector('h1');
+            // console.log(myImage);
+
+            // myImage.addEventListener('click', function() {
+            //     myImage.src = "img/img.jpg";
+            //     header.classList.add('blue');
+            // });
         });
     </script>
 
