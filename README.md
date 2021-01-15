@@ -18,3 +18,17 @@
 1. Создать стандартную структуру проекта (index, css, img, подключенные стили)
 2. Создать параграф (p) с текстом и кнопку (button)
 3. С помощью JS при нажатии на кнопку менять текст параграфа
+
+
+
+## Репозитории учащихся
+Болотов Роман  
+https://github.com/RomanBolotov/homework  
+
+Даниил Микитчук  
+https://github.com/Light2233/Homework  
+
+Куренков Кирилл  
+https://github.com/k23D/homework  
+
+https://github.com/Fura33/homework  
