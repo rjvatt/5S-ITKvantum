@@ -29,14 +29,26 @@
 2. Структура index.html:
 - контейнер (div) с классом container
     - p с текстом-рыбой (lorem)
+    ~~~html
     <p> </p>
+    ~~~
     - img
+    ~~~html
     <img src="путь к картинке" alt="">
+    ~~~
     - input:text с классом name
+    ~~~html
     <input type="text" name="" id="">
+    ~~~
     - button с классом btn и текстом "Нажать"
+    ~~~html
     <button></button>
-3. Что указывается в атрибуте alt у тега img? 
+    ~~~
+3. В параграф поместить ответ на вопрос: "Что указывается в атрибуте alt у тега img?"
+4. Добавить последним элементом в тег body тег 
+~~~html
+<script></script>
+~~~
 
 ## Репозитории учащихся
 Болотов Роман  
@@ -50,3 +62,7 @@ https://github.com/k23D/homework
 
 Артём Бедило
 https://github.com/Fura33/homework  
+
+Алексей Артемьев
+https://github.com/butchee/clashroyal-banditas
+
