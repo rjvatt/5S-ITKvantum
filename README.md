@@ -19,7 +19,24 @@
 2. Создать параграф (p) с текстом и кнопку (button)
 3. С помощью JS при нажатии на кнопку менять текст параграфа
 
-
+## 19.02.2021
+Задание:
+1. Создать стандартную структуру проекта (index, css, img, подключенные стили)
+    - index.html
+    - img
+    - css
+        - style.css
+2. Структура index.html:
+- контейнер (div) с классом container
+    - p с текстом-рыбой (lorem)
+    <p> </p>
+    - img
+    <img src="путь к картинке" alt="">
+    - input:text с классом name
+    <input type="text" name="" id="">
+    - button с классом btn и текстом "Нажать"
+    <button></button>
+3. Что указывается в атрибуте alt у тега img? 
 
 ## Репозитории учащихся
 Болотов Роман  
@@ -31,4 +48,5 @@ https://github.com/Light2233/Homework
 Куренков Кирилл  
 https://github.com/k23D/homework  
 
+Артём Бедило
 https://github.com/Fura33/homework  
