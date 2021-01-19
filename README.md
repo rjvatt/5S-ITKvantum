@@ -45,10 +45,15 @@
     <button></button>
     ~~~
 3. В параграф поместить ответ на вопрос: "Что указывается в атрибуте alt у тега img?"
-4. Добавить последним элементом в тег body тег 
-~~~html
-<script></script>
-~~~
+
+## **Домашнее задание:**
+1. Введение в JavaScript  
+https://learn.javascript.ru/intro
+2. Что такое NodeJS 
+https://habr.com/ru/post/420123/
+3. Всё что вам нужно знать о NodeJS
+https://habr.com/ru/post/460661/
+
 
 ## Репозитории учащихся
 Болотов Роман  
