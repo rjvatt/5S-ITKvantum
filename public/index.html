@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Magic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <p class="joke-text">
+            хаха
+        </p>
+        <ul class="menu">
+            <li>
+                <a href="get.html">Получить</a>
+            </li>
+            <li>
+                <a href="check.html">Проверить</a>
+            </li>
+            <li>
+                <a class="joke-button" href="#">API</a>
+            </li>
+            <li>
+                <img class="doge-img" src="https://images.dog.ceo/breeds/hound-plott/hhh-23456.jpeg" alt="">
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const button = document.querySelector('.joke-button'); // Ссылка-кнопка
+        const text = document.querySelector('.joke-text'); // Параграф
+        const doge = document.querySelector('.doge-img'); //Картинка
+
+
+        button.addEventListener('click', async function() {
+            //Воспользоваться API https://dog.ceo/dog-api/
+            let response = await fetch('https://official-joke-api.appspot.com/random_joke');
+            const jsonResponse = await response.json();
+            text.innerHTML = jsonResponse.setup + '<br>' + jsonResponse.punchline;
+            //Изменить перечень полей 
+            //const joke = jsonResponse.setup;
+            //  jsonResponse.message
+            doge.src = "favicon.png"
+        })
+    </script>
+</body>
+
+</html>
