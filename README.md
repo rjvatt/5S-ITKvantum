@@ -79,4 +79,8 @@ https://github.com/butchee/clashroyal-banditas
 
 2 странички:  
 1-выдавать QR код  
-2-проверять QR код
+2-проверять QR код  
+
+
+
+https://github.com/rjvatt/qrMagic
